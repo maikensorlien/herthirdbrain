@@ -1,0 +1,280 @@
+/* 
+.playfair-<uniquifier> {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section, .sectionFive div {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionFive div{
+  padding: 20px 0 0 0;
+}
+
+.sectionFive {
+  margin-bottom: 80px
+}
+
+h1, h2, h3 {
+  font-family: "Playfair", serif;
+  color: #60FB30;
+  text-transform: uppercase ;
+}
+
+h1 {
+  color: #ECEFE7;
+  /* background: linear-gradient(to bottom, 
+                    #2a571c, #60FB30); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text;  */
+  font-size: 2em;
+}
+
+.greenFont {
+  background: linear-gradient(to bottom, 
+                    #2a571c, #60FB30); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ecefe7b8;
+}
+
+.heroImage p {
+  color: #ecefe7b8;
+  font-style: italic;
+  font-size: 1em;
+}
+
+body {
+  background-color: #060907;
+}
+
+.heroImage {
+  background-color:rgb(15, 55, 42);
+  background-image: url('../images/heroImage.png');
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+  padding: 10px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main, footer {
+  padding: 10px;
+}
+
+.ofLogoSmall img {
+  height: 35px;
+  width: auto;
+  /* background-color: #2a571c; */
+}
+
+.nav {
+  display: none;
+}
+
+
+#hamburgerMenu:checked ~ .nav {
+  display: block;
+}
+
+#hamburgerMenu {
+  display: none;
+}
+
+.navigationMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 350px;
+  text-align: center;
+}
+
+.sectionTwo p {
+  margin: 10px 0;
+}
+
+.ofCtaButton p {
+  border: 3px solid #ADCD8D;
+  background-color: #60FB30;
+  background-image: radial-gradient(#3ca71f, #62F930);
+  padding: 10px;
+  border-radius: 45px;
+  font-size: 1.6em;
+  color: #060907;
+  text-align: center;
+  font-weight: 600;
+  width: 300px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profilePicture {
+  width: 200px;
+  height: 200px;
+  border-radius: 110px;
+  /* background-color: #2a571c; */
+  border: #2a571c 3px solid;
+  box-shadow: #4b733f 10px 10px 100px;
+  margin: 10px;
+}
+
+.scrollableIconMenu {
+  /* padding: 0 20px; */
+}
+
+.scrollableIconMenu ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: auto;
+  overflow-y: scroll;
+  width: 98vw;
+  padding: 10px;
+  padding-inline-start: 0px;
+}
+
+.icon img{
+  background-color: rgb(15, 55, 42);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 20px; 
+}
+
+.teaserMenu {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.teaserMenu div {
+  width: 200px;
+  height: 140px;
+  margin: 10px;
+  background-color: #2a571c;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.teaserMenuText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.teaserMenuText img {
+  width: 30px;
+}
+
+.teaserOne {
+  background-image: url("../images/her_third_brain_galaxy_feed.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.teaserMenu div p {
+  font-weight: 200;
+  font-style: italic;
+  /* margin: 7px; */
+  background: linear-gradient(
+        180deg,
+        #0609071d,
+        #060907
+    );
+  padding: 10px 10px 10px 5px;
+  border-radius: 0px 19px 0px 19px;
+}
+
+.logoSection ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 9px;
+    background: linear-gradient(
+        90deg,
+        #eaffb3,
+        #80ff00
+    );
+}
+
+.hamburger span:nth-child(1) {
+    width: 50px;
+}
+
+.hamburger span:nth-child(2) {
+    width: 60px;
+}
+
+.hamburger span:nth-child(3) {
+    width: 34px;
+}
+
+footer {
+  height: 40px;
+  background-color: #131513;
+  padding: 60px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  color: #ecefe7b8;
+  text-decoration: underline;
+}
