@@ -110,7 +110,7 @@ main, footer {
 
 p {
   font-size: 1.2em;
-  max-width: 350px;
+  max-width: 300px;
   text-align: center;
 }
 
@@ -153,12 +153,12 @@ a {
 .scrollableIconMenu ul {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   overflow: auto;
   overflow-y: scroll;
   width: 98vw;
-  padding: 10px;
-  padding-inline-start: 0px;
+  padding: 10px 10px 30px 10px;
+  /* padding-inline-start: 0px; */
+  scroll-behavior: smooth;
 }
 
 .icon img{
@@ -166,7 +166,7 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  margin: 20px; 
+  margin: 20px 30px; 
 }
 
 .teaserMenu {
@@ -273,3 +273,32 @@ footer a {
   color: #ecefe7b8;
   text-decoration: underline;
 }
+
+.logoSection img {
+  height: 45px;
+}
+
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  /* margin-top: 20px; */
+  width: 0px;
+  height: 8px;
+}
+
+/* Scrollbar background */
+::-webkit-scrollbar-track {
+  background: #111111;
+  /* border-radius: 10px; */
+}
+
+/* Draggable scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #80ff80;
+  /* border-radius: 10px; */
+}
+
+/* Hover effect */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b3ffb3;
+} */
