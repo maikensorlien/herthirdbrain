@@ -30,6 +30,10 @@
   margin-bottom: 80px
 }
 
+.section {
+  margin-top: 40px;
+}
+
 h1, h2, h3 {
   font-family: "Playfair", serif;
   color: #60FB30;
