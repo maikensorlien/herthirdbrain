@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .section, .sectionFive div {
@@ -77,6 +78,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 
 main, footer {
@@ -101,17 +105,30 @@ main, footer {
   display: none;
 }
 
+header > div:nth-child(2) {
+  text-align: center;
+}
+
 .navigationMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding:  0 20px;
+  padding-top: 170px;
+  position: fixed;
+  width: 90%;
+  background: linear-gradient(180deg, #060907, #060907, #060907,#0609078b);
+  z-index: 100;
 }
 
 p {
   font-size: 1.2em;
   max-width: 300px;
   text-align: center;
+}
+
+.sectionOne {
+  margin-top: 220px;
 }
 
 .sectionTwo p {
@@ -219,6 +236,7 @@ a {
 }
 
 .logoSection ul {
+  margin-top: 20px;
   width: 300px;
   display: flex;
   justify-content: space-evenly;
@@ -272,6 +290,10 @@ footer ul {
 footer a {
   color: #ecefe7b8;
   text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.8em;
 }
 
 .logoSection img {
