@@ -26,12 +26,12 @@
   padding: 20px 0 0 0;
 }
 
-.sectionFive {
-  margin-bottom: 80px
-}
-
 .section {
   margin-top: 40px;
+}
+
+.sectionFive {
+  margin-bottom: 80px
 }
 
 h1, h2, h3 {
@@ -200,14 +200,15 @@ a {
   max-width: 800px;
 }
 
-.teaserMenu div {
+.teaserOne {
   flex: 1 1 0;
-  width: 300px;
-  min-width: 180px;
+  /* width: 100%; */
+  width: 80vw;
+  max-width: 450px;
   box-sizing: border-box;
-  height: 160px;
+  /* height: auto; */
   margin: 10px 20px;
-  background-color: #2a571c;
+  /* background-color: #2a571c; */
   border-radius: 20px;
   display: flex;
   align-items: flex-end; 
@@ -224,12 +225,12 @@ a {
   width: 25px;
 }
 
-.teaserOne {
+/* .teaserOne {
   background-image: url("../images/her_third_brain_galaxy_feed.jpg");
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-}
+} */
 
 .teaserMenu div p {
   font-weight: 200;
