@@ -113,7 +113,7 @@ header > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:  0 20px;
+  padding:  20px;
   padding-top: 170px;
   position: fixed;
   width: 90%;
@@ -187,21 +187,26 @@ a {
 }
 
 .teaserMenu {
-  margin: 10px;
   display: flex;
   flex-wrap: wrap;
+  margin: 10px;
   justify-content: center;
-  max-width: 600px;
+  /* gap: 20px; */
+  width: auto;
+  max-width: 800px;
 }
 
 .teaserMenu div {
-  width: 140px;
-  height: 100px;
-  margin: 10px;
+  flex: 1 1 0;
+  width: 300px;
+  min-width: 180px;
+  box-sizing: border-box;
+  height: 160px;
+  margin: 10px 20px;
   background-color: #2a571c;
   border-radius: 20px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; 
 }
 
 .teaserMenuText {
@@ -324,3 +329,17 @@ footer p {
 /* ::-webkit-scrollbar-thumb:hover {
   background: #b3ffb3;
 } */
+
+@media screen and (max-width: 360px) {
+  .ofCtaButton p {
+    font-size: 1em;
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 856px) {
+  .scrollableIconMenu ul {
+  justify-content: center;
+}
+
+}
