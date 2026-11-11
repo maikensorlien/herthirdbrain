@@ -250,15 +250,36 @@ header > div:nth-child(2) {
 }
 
 .navigationMenu {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   padding: 21px 0;
   padding-top: 170px;
   position: fixed;
   width: 100%;
   background: linear-gradient(180deg, #060907, #060907, #060907, #0609078b);
   z-index: 100;
+}
+
+.ofLogoSmall {
+  justify-self: start;
+}
+
+/* Language buttons */
+.language-switcher {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hamburger menu */
+nav {
+  justify-self: end;
 }
 
 .navigationMenu div {
